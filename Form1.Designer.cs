@@ -118,6 +118,8 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
+            checkBox1.Checked = true;
+            checkBox1.CheckState = CheckState.Checked;
             checkBox1.Font = new Font("Calibri", 20.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             checkBox1.Location = new Point(158, 371);
             checkBox1.Margin = new Padding(2, 6, 2, 6);
@@ -126,6 +128,7 @@
             checkBox1.TabIndex = 5;
             checkBox1.Text = "AUTO OPEN";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // YourNicknameLabel
             // 

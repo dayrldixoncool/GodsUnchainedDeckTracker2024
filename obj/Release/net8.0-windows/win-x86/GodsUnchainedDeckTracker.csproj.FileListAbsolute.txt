@@ -485,3 +485,4 @@ C:\GU\GodsUnchainedDeckTracker\GodsUnchainedDeckTracker\obj\Release\net8.0-windo
 C:\GU\GodsUnchainedDeckTracker\GodsUnchainedDeckTracker\obj\Release\net8.0-windows\win-x86\GodsUnchainedDeckTracker.pdb
 C:\GU\GodsUnchainedDeckTracker\GodsUnchainedDeckTracker\obj\Release\net8.0-windows\win-x86\GodsUnchainedDeckTracker.genruntimeconfig.cache
 C:\GU\GodsUnchainedDeckTracker\GodsUnchainedDeckTracker\obj\Release\net8.0-windows\win-x86\ref\GodsUnchainedDeckTracker.dll
+C:\GU\GodsUnchainedDeckTracker\GodsUnchainedDeckTracker\bin\Release\net8.0-windows\win-x86\GodsUnchainedDeckTracker.dll.config

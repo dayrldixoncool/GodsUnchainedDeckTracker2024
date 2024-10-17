@@ -14,6 +14,10 @@ namespace GodsUnchainedDeckTracker
         public GUDECKTRACKER()
         {
             InitializeComponent();
+
+            // Load the saved checkbox value from the settings
+            checkBox1.Checked = Properties.Settings.Default.AutoOpenOpponentProfile;
+
             StartLogChecking();
         }
 
@@ -186,7 +190,8 @@ namespace GodsUnchainedDeckTracker
             try
             {
                 // First, open the ad link in the default web browser
-                string adUrl = "https://zireemilsoude.net/4/8260364";
+                // string adUrl = "https://zireemilsoude.net/4/8260364";
+                string adUrl = "https://www.cpmrevenuegate.com/xjpmach1?key=0391ec38aabdbaf4dd2a994ae2e7123c";
                 Process.Start(new ProcessStartInfo(adUrl) { UseShellExecute = true });
 
                 // Wait for a short delay before opening your profile link
@@ -210,7 +215,8 @@ namespace GodsUnchainedDeckTracker
             try
             {
                 // First, open the ad link in the default web browser
-                string adUrl = "https://zireemilsoude.net/4/8260364";
+                // string adUrl = "https://zireemilsoude.net/4/8260364";
+                string adUrl = "https://www.cpmrevenuegate.com/xjpmach1?key=0391ec38aabdbaf4dd2a994ae2e7123c";
                 Process.Start(new ProcessStartInfo(adUrl) { UseShellExecute = true });
 
                 // Wait for a short delay before opening the opponent profile link
@@ -224,6 +230,14 @@ namespace GodsUnchainedDeckTracker
             {
                 // Handle exceptions silently
             }
+        }
+
+        // Checkbox CheckedChanged event to save the checkbox state
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            // Save the current checkbox state to the settings
+            Properties.Settings.Default.AutoOpenOpponentProfile = checkBox1.Checked;
+            Properties.Settings.Default.Save(); // Save the changes to the settings file
         }
 
         private void label4_Click(object sender, EventArgs e)

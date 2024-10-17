@@ -3,6 +3,7 @@ C:\GU\GodsUnchainedDeckTracker\publish\runtimes\win-x86\native\WebView2Loader.dl
 C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.dll
 C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.deps.json
 C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.runtimeconfig.json
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.dll.config
 C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.pdb
 C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.CSharp.dll
 C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.VisualBasic.Core.dll
