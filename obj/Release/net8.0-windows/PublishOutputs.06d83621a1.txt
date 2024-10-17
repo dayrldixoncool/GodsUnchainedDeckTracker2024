@@ -1,0 +1,14 @@
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.exe
+C:\GU\GodsUnchainedDeckTracker\publish\runtimes\win-x86\native\WebView2Loader.dll
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.dll
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.deps.json
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.runtimeconfig.json
+C:\GU\GodsUnchainedDeckTracker\publish\GodsUnchainedDeckTracker.pdb
+C:\GU\GodsUnchainedDeckTracker\publish\runtimes\win-arm64\native\WebView2Loader.dll
+C:\GU\GodsUnchainedDeckTracker\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.Core.dll
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.WinForms.dll
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.Wpf.dll
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.Core.xml
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.Wpf.xml
+C:\GU\GodsUnchainedDeckTracker\publish\Microsoft.Web.WebView2.WinForms.xml

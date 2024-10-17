@@ -25,6 +25,9 @@ namespace GodsUnchainedDeckTracker
             // Set the path to the debug.log file dynamically
             string logFilePath = $@"C:\Users\{userName}\AppData\LocalLow\Immutable\gods\debug.log";
 
+            DateTime lastModifiedTime = DateTime.MinValue; // To track the last modified time
+            bool isFirstCheck = true; // Flag to indicate if it's the first check
+
             // Continuously monitor the log file for updates
             while (true)
             {
@@ -33,9 +36,28 @@ namespace GodsUnchainedDeckTracker
                     // Check if the log file exists
                     if (File.Exists(logFilePath))
                     {
-                        // Read the log data
-                        string logData = await File.ReadAllTextAsync(logFilePath);
-                        ExtractAndDisplayIDs(logData);
+                        // Get the last write time of the log file
+                        DateTime currentModifiedTime = File.GetLastWriteTime(logFilePath);
+
+                        // On the first check, just set the lastModifiedTime
+                        if (isFirstCheck)
+                        {
+                            lastModifiedTime = currentModifiedTime; // Set the initial modified time
+                            isFirstCheck = false; // Set the flag to false after the first check
+                        }
+                        else
+                        {
+                            // Check if the log file has been modified since the last check
+                            if (currentModifiedTime > lastModifiedTime)
+                            {
+                                // Update the last modified time
+                                lastModifiedTime = currentModifiedTime;
+
+                                // Read the log data
+                                string logData = await File.ReadAllTextAsync(logFilePath);
+                                ExtractAndDisplayIDs(logData); // Process the new log data
+                            }
+                        }
                     }
                 }
                 catch (FileNotFoundException)
@@ -48,13 +70,14 @@ namespace GodsUnchainedDeckTracker
                     // Handle other IO exceptions (e.g., access denied, file being used by another process)
                     // Do nothing, just continue to the next check
                 }
-                catch
+                catch (Exception ex)
                 {
-                    // Handle any other exceptions silently
+                    // Handle any other exceptions silently or log them
+                    Console.WriteLine(ex.Message); // Or use a logging framework
                 }
 
                 // Wait for a bit before checking the log file again
-                await Task.Delay(500); // Check every 5 seconds
+                await Task.Delay(200); // Check every 200 milliseconds
             }
         }
 
@@ -167,7 +190,7 @@ namespace GodsUnchainedDeckTracker
                 Process.Start(new ProcessStartInfo(adUrl) { UseShellExecute = true });
 
                 // Wait for a short delay before opening your profile link
-                await Task.Delay(400); // 1-second delay
+                await Task.Delay(100); // 1-second delay
 
                 // Then, open your profile on gudecks.com
                 string profileUrl = $"https://gudecks.com/meta/player-stats?userId={yourId}";
@@ -191,7 +214,7 @@ namespace GodsUnchainedDeckTracker
                 Process.Start(new ProcessStartInfo(adUrl) { UseShellExecute = true });
 
                 // Wait for a short delay before opening the opponent profile link
-                await Task.Delay(1000); // 1-second delay
+                await Task.Delay(100); // 1-second delay
 
                 // Then, open the opponent profile on gudecks.com
                 string profileUrl = $"https://gudecks.com/meta/player-stats?userId={opponentId}";

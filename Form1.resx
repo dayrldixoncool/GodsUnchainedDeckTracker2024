@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>When opening this deck link, a ad will be displayed.
+Pease Dont Interupt it.Close it after Some Time.
+Your support helps us keep the software free and running. 
+Thank you for your understanding!
+
+
+
+</value>
+  </data>
 </root>

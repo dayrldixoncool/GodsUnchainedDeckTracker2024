@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUDECKTRACKER));
             YourIdLabel = new Label();
             OpponentIdLabel = new Label();
             OpponentNickLabel = new Label();
@@ -53,9 +54,9 @@
             YourIdLabel.Location = new Point(232, 47);
             YourIdLabel.Margin = new Padding(2, 0, 2, 0);
             YourIdLabel.Name = "YourIdLabel";
-            YourIdLabel.Size = new Size(50, 19);
+            YourIdLabel.Size = new Size(111, 19);
             YourIdLabel.TabIndex = 0;
-            YourIdLabel.Text = "label1";
+            YourIdLabel.Text = "Start the game";
             YourIdLabel.Click += YourIdLabel_Click;
             // 
             // OpponentIdLabel
@@ -64,9 +65,9 @@
             OpponentIdLabel.Location = new Point(230, 51);
             OpponentIdLabel.Margin = new Padding(2, 0, 2, 0);
             OpponentIdLabel.Name = "OpponentIdLabel";
-            OpponentIdLabel.Size = new Size(50, 19);
+            OpponentIdLabel.Size = new Size(130, 19);
             OpponentIdLabel.TabIndex = 1;
-            OpponentIdLabel.Text = "label2";
+            OpponentIdLabel.Text = "a very bad deck :)";
             // 
             // OpponentNickLabel
             // 
@@ -74,9 +75,9 @@
             OpponentNickLabel.Location = new Point(230, 18);
             OpponentNickLabel.Margin = new Padding(2, 0, 2, 0);
             OpponentNickLabel.Name = "OpponentNickLabel";
-            OpponentNickLabel.Size = new Size(50, 19);
+            OpponentNickLabel.Size = new Size(129, 19);
             OpponentNickLabel.TabIndex = 2;
-            OpponentNickLabel.Text = "label3";
+            OpponentNickLabel.Text = "Let's Hope He has";
             // 
             // panel1
             // 
@@ -106,18 +107,18 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.Menu;
             label1.Font = new Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(52, 452);
+            label1.Location = new Point(52, 445);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(394, 85);
+            label1.Size = new Size(390, 119);
             label1.TabIndex = 4;
-            label1.Text = "When opening this deck link, a brief ad will be displayed.\r\n Your support helps us keep the software free and running. \r\nThank you for your understanding!\r\n\r\n\r\n";
+            label1.Text = resources.GetString("label1.Text");
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Calibri", 20.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            checkBox1.Location = new Point(167, 370);
+            checkBox1.Location = new Point(158, 371);
             checkBox1.Margin = new Padding(2, 6, 2, 6);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(167, 37);
@@ -132,9 +133,9 @@
             YourNicknameLabel.Location = new Point(232, 16);
             YourNicknameLabel.Margin = new Padding(2, 0, 2, 0);
             YourNicknameLabel.Name = "YourNicknameLabel";
-            YourNicknameLabel.Size = new Size(50, 19);
+            YourNicknameLabel.Size = new Size(111, 19);
             YourNicknameLabel.TabIndex = 6;
-            YourNicknameLabel.Text = "label1";
+            YourNicknameLabel.Text = "Start the game";
             // 
             // panel3
             // 
@@ -143,7 +144,7 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(YourNicknameLabel);
             panel3.Controls.Add(YourIdLabel);
-            panel3.Location = new Point(77, 138);
+            panel3.Location = new Point(52, 128);
             panel3.Margin = new Padding(2, 6, 2, 6);
             panel3.Name = "panel3";
             panel3.Size = new Size(369, 86);
@@ -182,7 +183,7 @@
             panel2.Controls.Add(label6);
             panel2.Controls.Add(OpponentNickLabel);
             panel2.Controls.Add(OpponentIdLabel);
-            panel2.Location = new Point(77, 236);
+            panel2.Location = new Point(52, 226);
             panel2.Margin = new Padding(2, 6, 2, 6);
             panel2.Name = "panel2";
             panel2.Size = new Size(369, 88);
