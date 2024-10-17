@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GodsUnchainedDeckTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d76f8bdb06508dc8d753d4db4515e75a995f3ba9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+413e6ba788b206aa481c2ef9846ae796214d5221")]
 [assembly: System.Reflection.AssemblyProductAttribute("GodsUnchainedDeckTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GodsUnchainedDeckTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -240,5 +240,10 @@ namespace GodsUnchainedDeckTracker
         {
             // Another label click event logic (if any)
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

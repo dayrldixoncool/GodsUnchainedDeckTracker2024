@@ -110,9 +110,10 @@
             label1.Location = new Point(52, 445);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(390, 119);
+            label1.Size = new Size(395, 119);
             label1.TabIndex = 4;
             label1.Text = resources.GetString("label1.Text");
+            label1.Click += label1_Click;
             // 
             // checkBox1
             // 
