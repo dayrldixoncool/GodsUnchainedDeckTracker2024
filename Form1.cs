@@ -54,7 +54,7 @@ namespace GodsUnchainedDeckTracker
                 }
 
                 // Wait for a bit before checking the log file again
-                await Task.Delay(5000); // Check every 5 seconds
+                await Task.Delay(500); // Check every 5 seconds
             }
         }
 
@@ -167,7 +167,7 @@ namespace GodsUnchainedDeckTracker
                 Process.Start(new ProcessStartInfo(adUrl) { UseShellExecute = true });
 
                 // Wait for a short delay before opening your profile link
-                await Task.Delay(1000); // 1-second delay
+                await Task.Delay(400); // 1-second delay
 
                 // Then, open your profile on gudecks.com
                 string profileUrl = $"https://gudecks.com/meta/player-stats?userId={yourId}";
