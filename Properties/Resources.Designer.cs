@@ -59,35 +59,5 @@ namespace GodsUnchainedDeckTracker.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap game_art_brain_creation_amp_consulting_20 {
-            get {
-                object obj = ResourceManager.GetObject("game-art-brain-creation-amp-consulting-20", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap game_art_brain_creation_amp_consulting_201 {
-            get {
-                object obj = ResourceManager.GetObject("game-art-brain-creation-amp-consulting-201", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Screenshot__15_ {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot (15)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
