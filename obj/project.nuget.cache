@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ox+biZnFmMM=",
+  "success": true,
+  "projectFilePath": "C:\\GU\\GodsUnchainedDeckTracker\\GodsUnchainedDeckTracker\\GodsUnchainedDeckTracker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Damiru\\.nuget\\packages\\microsoft.web.webview2\\1.0.2792.45\\microsoft.web.webview2.1.0.2792.45.nupkg.sha512"
+  ],
+  "logs": []
+}
